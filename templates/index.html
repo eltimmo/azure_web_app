@@ -1,0 +1,30 @@
+<!doctype html>
+<head>
+    <title>Azure WebApp</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<html>
+   <body>
+     <main>
+        <div class="px-4 py-3 my-2 text-center">
+            <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='images/azure-icon.svg') }}" alt="Azure Logo" width="192" height="192"/>
+            <h1 class="display-6 fw-bold text-primary">WebApp</h1>
+            <p>Environment - {{ environment }}</p>
+            <label for="proteins">Protein</label>
+            <select name=protein method="GET" action="/">
+              {% for protein in proteins %}
+                <option value= "{{ protein }}" SELECTED>{{ protein }}</option>"
+              {% endfor %}
+            </select>
+            <br>
+            <label for="sauces">Sauce</label>            
+            <select name=sauce method="GET" action="/">
+              {% for sauce in sauces %}
+                <option value= "{{ sauce }}" SELECTED>{{ sauce }}</option>"
+              {% endfor %}
+            </select>                          
+        </div>
+     </main>      
+   </body>
+</html>
