@@ -1,6 +1,3 @@
-source .venv/bin/activate
-flask run
+Udemy Azure PaaS
 
-curl "http://localhost:5000/health"
-
-protiens=chicken,beef,tofu
+Content and course ©Tim Tharratt 2023
