@@ -128,3 +128,14 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .DS_Store
+webapp/pyvenv.cfg
+webapp/bin/activate
+webapp/bin/activate.csh
+webapp/bin/activate.fish
+webapp/bin/Activate.ps1
+webapp/bin/pip
+webapp/bin/pip3
+webapp/bin/pip3.11
+webapp/bin/python
+webapp/bin/python3
+webapp/bin/python3.11
